@@ -16,7 +16,7 @@ jobs:
           repository: farizagati/katalon-web-cura
       - name: List Files
         run: |
-           echo $GITHUB_WORKSPACE
+           dir $GITHUB_WORKSPACE
       - name: Katalon Studio Github Action
         uses: katalon-studio/katalon-studio-github-action@v3.0
         with:
