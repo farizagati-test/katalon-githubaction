@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.0
+        uses: actions/checkout@v3.5.0
         with:
           repository: farizagati/katalon-web-cura@master
 
