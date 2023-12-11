@@ -9,11 +9,11 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
-    - name: Set Up Katalon Studio
-      uses: farizagati/katalon-web-cura@master
+      
+    - name: Katalon Studio
+      uses: katalon-studio/katalon-studio-github-action@v3.0
       with:
         version: '8.6.8'
-        projectPath: '${{ github.workspace }}'
+        projectPath: 'farizagati/katalon-web-cura@master'
         args: '-noSplash -retry=0 -testSuitePath="Test Suites/Login/TS_Login" -executionProfile="default" -apiKey= ${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
-        
+      
