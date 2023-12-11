@@ -17,5 +17,5 @@ jobs:
 
       - name: List Files
         run: |
-          pwd
-          ls -al
+          dir
+          echo %cd%
